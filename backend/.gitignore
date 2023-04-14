@@ -1,0 +1,6 @@
+node_modules/
+.env
+.vscode
+fhir_shell.sh
+notes/
+uploads/

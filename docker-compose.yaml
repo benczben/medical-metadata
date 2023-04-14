@@ -1,0 +1,85 @@
+version: '3.5'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: ./Dockerfile
+    #command: npm run start
+    command: npm run startDev
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+      - "9229:9229"
+    working_dir: /app
+    #with volumes there is no need to rebiuild the docker image and redeploy it
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - postgres
+  
+  swagger:
+    container_name: swagger_container
+    image: swaggerapi/swagger-ui
+    ports:
+      - "80:8080"
+    environment:
+      API_URL: swagger/api.yaml
+    volumes:
+      - ./swagger:/usr/share/nginx/html/swagger
+    restart: unless-stopped
+    depends_on: 
+      - backend
+
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-admin}
+      POSTGRES_DB: ${POSTGRES_DB:-testdb}
+      PGDATA: /data/postgres
+    volumes:
+      #- postgres:/data/postgres
+      - ./backend/dao/source_files/URINALYSIS_EXTENDED.txt:/tmp/data/URINALYSIS.txt
+      - ./backend/uploads/collections/:/tmp/data/uploads/collections/
+      - ./init_01_schema.sql:/docker-entrypoint-initdb.d/init_01.sql
+      - ./init_02_insert_loinc.sql:/docker-entrypoint-initdb.d/init_02.sql
+      - ./init_03_load_raw_data.sql:/docker-entrypoint-initdb.d/init_03.sql
+    ports:
+      - "5435:5432"
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: './frontend'
+      target: 'develop-stage'
+    ports:
+      - '8081:8080'
+    volumes:
+      - './frontend:/app'
+    command: /bin/sh -c "npm run serve"
+    depends_on:
+      - backend
+    
+volumes:
+  postgres:
+    driver: local
+  pgadmin:
+    driver: local
+  backend:
+    driver: local
+  

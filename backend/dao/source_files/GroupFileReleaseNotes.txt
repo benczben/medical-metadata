@@ -1,0 +1,223 @@
+LOINC GroupFile release notes
+
+Please see the associated Readme for details about the contents of the file, including definitions of the ParentGroups and Groups. 
+
+---------------------------------------------------------
+ Version 2.69, Beta, published with LOINC Version 2.69
+ Released December 2020
+---------------------------------------------------------
+
+This release of the Group file remains at Beta pre-production status. We received no significant public comments about its contents, structure, or utility that we would have used as the basis for incrementing its maturity level or conceptualization. If you are using this file and have feedback (good or bad), please contact us at https://loinc.org/contact.
+
+The three special SARS-CoV-2/COVID-19 Groups described in the 2.68 release notes' section have been updated to include new LOINC terms created for the 2.69 release.
+
+Each file contains the following counts:
+
+	- ParentGroup - 45 rows of data representing 45 unique Parent Groups
+	
+	- ParentGroupAttributes - 45 rows of data representing 45 unique Parent Groups.
+
+	- Group - 6631 rows of data representing 45 unique Parent Groups and 6631 unique Groups. There are 16 Inactive Groups and 10 Deprecated Groups that are included in this file but not in the GroupLoincTerms file.
+
+	- GroupAttributes - 1439 rows of data representing 1434 unique Groups and their attributes
+
+	- GroupLoincTerms - 37970 rows of data representing 6605 unique Groups and 27504 unique LOINC terms
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+
+---------------------------------------------------------
+ Version 2.68, Beta, published with LOINC Version 2.68
+ Released June 2020
+---------------------------------------------------------
+
+This release of the Group file remains at Beta pre-production status. We received no significant public comments about its contents, structure, or utility that we would have used as the basis for incrementing its maturity level or conceptualization.
+
+1) 	SARS-CoV-2/COVID-19 Groups
+We specifically created 3 Parent Groups related to SARS-CoV-2 laboratory testing for this release. Each of those Parent Groups contains one Group. Additional SARS-CoV-2 Groups for specific subsets such as SARS-CoV-2 N gene were produced as part of the automated Groups process, but are not as comprehensive as the three created specifically, which are described below.
+	
+	- Parent LG51014-5/Group LG51017-8 (SARSCoV2 detection) contains all LOINC terms related to detection of the SARS-CoV-2 virus, including molecular, antigen, and culture terms
+
+	- Parent LG51016-0/Group LG51019-4 (SARSCoV2 molecular detection) contains all LOINC terms for molecular detection of the SARS-CoV-2 virus
+
+	- Parent LG51015-2/Group LG51018-6 (SARSCoV2 antibody detection) contains all LOINC terms for SARS-CoV-2 serology testing
+
+2)	Counts
+Each file contains the following counts:
+
+	- ParentGroup - 45 rows of data representing 45 unique Parent Groups
+	
+	- ParentGroupAttributes - 45 rows of data representing 45 unique Parent Groups.
+
+	- Group - 6593 rows of data representing 45 unique Parent Groups and 6593 unique Groups. There are 14 Inactive Groups and 10 Deprecated Groups that are included in this file but not in the GroupLoincTerms file.
+
+	- GroupAttributes - 1435 rows of data representing 1430 unique Groups and their attributes
+
+	- GroupLoincTerms - 37328 rows of data representing 6569 unique Groups and 27117 unique LOINC terms
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+
+
+---------------------------------------------------------
+ Version 2.67, Beta, published with LOINC Version 2.67
+ Released December 2019  
+---------------------------------------------------------
+
+This release of the Group file remains at Beta pre-production status. We received no significant public comments about its contents, structure, or utility that we would have used as the basis for incrementing its maturity level or conceptualization.
+
+Each file contains the following counts:
+
+	- ParentGroup - 42 rows of data representing 42 unique Parent Groups
+	
+	- ParentGroupAttributes - 42 rows of data representing 42 unique Parent Groups.
+
+	- Group - 6525 rows of data representing 42 unique Parent Groups and 6525 unique Groups. There are 12 Inactive Groups and 10 Deprecated Groups that are included in this file but not in the GroupLoincTerms file.
+
+	- GroupAttributes - 1433 rows of data representing 1428 unique Groups and their attributes
+
+	- GroupLoincTerms - 36670 rows of data representing 6503 unique Groups and 26731 unique LOINC terms
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+
+---------------------------------------------------------
+ Version 2.66, Beta 3, published with LOINC Version 2.66
+ Released June 2019  
+---------------------------------------------------------
+
+This release has been incremented from "Beta.2" to "Beta.3" because we received no significant public comments about its structure and have not identified any major format changes that are needed.
+
+Each file contains the following counts:
+
+	- ParentGroup - 42 rows of data representing 42 unique Parent Groups
+	
+	- ParentGroupAttributes - 42 rows of data representing 42 unique Parent Groups.
+
+	- Group - 6500 rows of data representing 42 unique Parent Groups and 6500 unique Groups. There are 13 Inactive Groups that are included in this file but not in the GroupLoincTerms file.
+
+	- GroupAttributes - 1429 rows of data representing 1424 unique Groups and their attributes
+
+	- GroupLoincTerms - 36399 rows of data representing 6487 unique Groups and 26524 unique LOINC terms
+
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+
+-----------------------
+ Version 2.65, Beta 2        
+ Released December 2018  
+-----------------------
+
+This release has been incremented from "Beta.1" to "Beta.2" because we received no significant public comments about its structure and have not identified any major format changes that are needed.
+
+We have added content in several domains, including estimated fetal body weight and gestational age, pregnancy delivery date, pregnancy tests, and biochemical markers of smoking.
+
+The following terms were removed from the Smoking status Group (LG41856-2) because they are not related to smoking:
+	81786-6 Chemokine (C-C motif) ligand 17 [Mass/volume] in Serum by Immunoassay
+	74512-5 Chemokine (C-C motif) ligand 18 [Mass/volume] in Serum
+
+In this Beta 2 release, all ParentGroups have a Status of Active, as do all except seven individual Groups, which are Inactive.
+
+Each file contains the following counts:
+
+	- ParentGroup - 41 rows of data representing 41 unique Parent Groups
+	
+	- ParentGroupAttributes - 22 rows of data representing 22 unique Parent Groups. Note that several Parent Groups do not have attribute values in this file; this issue will be corrected for the next release. 
+
+	- Group - 5723 rows of data representing 41 unique Parent Groups and 5723 unique Groups. The seven Inactive Groups are included in this file but not in the GroupLoincTerms file.
+
+	- GroupAttributes - 912 rows of data representing 907 unique Groups and their attributes
+
+	- GroupLoincTerms - 34469 rows of data representing 5716 unique Groups and 24749 unique LOINC terms
+
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+-----------------------
+ Version 2.64, Beta 1        
+ Released June 2018  
+-----------------------
+
+This release has been upgraded to "Beta" VersionType because we received no significant public comments about its structure and have not identified any major format changes that are needed.
+
+We have added contents in several domains, including Groups of Radiology terms by Region Imaged, Document Ontology Groups based on the Setting, and several Groups based on a broader clinical concept, such as Social Determinants of Health and physical activity. 
+
+We also added more Group-level attributes, including UsageNotes and Component-level molecular weights from the PubChem database for nearly 900 Groups. An additional Status value of Inactive was created for ParentGroups and Groups (see the associated Readme for the Status definitions). In this Beta.1 release, all ParentGroups have a Status of Active, as do all individual Groups except three, which are Inactive.
+
+Each file contains the following counts:
+
+	- ParentGroup - 37 rows of data representing 37 unique Parent Groups
+	
+	- ParentGroupAttributes - 22 rows of data representing 22 unique Parent Groups. All Parent Groups in the Beta.1 release have a Status of Active.
+
+	- Group - 5650 rows of data representing 37 unique Parent Groups and 5650 unique Groups. The 6 Inactive Groups are not included in the GroupLoincTerms file.
+
+	- GroupAttributes - 904 rows of data representing 899 unique Groups and their attributes
+
+	- GroupLoincTerms - 33480 rows of data representing 5644 unique Groups and 24075 unique LOINC terms
+
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+Please see the primary LOINC Release Notes for information regarding file versioning that has been implemented in this release.
+
+-----------------------
+ Version 2.63, Alpha 2        
+ Released December 2017  
+-----------------------
+
+This release of the LOINC Groups artifact continues to have a VersionType of "Alpha" because we have made significant changes to the structure and contents of the file.
+
+To eliminate redundancy, the release artifact has been split into five .csv files, two at the ParentGroup level and three at the Group level, as described in detail in the associated Readme. Briefly, the two ParentGroup files contain the ParentGroup name and Status, and any applicable attributes at the ParentGroup level, respectively. The three Group files contain the relationship between a) the ParentGroup and the Group, b) any applicable attributes at the individual Group level, and c) the relationship between the Group, Category, LOINC numbers and LOINC Long Common Names, respectively.
+
+We have added contents in several domains, including reportable microbiology, radiology, and Document Ontology. We have also begun adding Group-level attributes, such as a summary of studies comparing point of care glucose testing to that done in the central laboratory, which is attached to two Groups that roll up Glucose testing in any blood, serum, or plasma specimen done by any Method. Over time, we plan to add many more Group-level attributes; for the Alpha 2 release, we have included a handful. Similarly, we have added a field in both the Group and GroupLoincTerms files to identify the archetype term for a specific Group, meaning the most general representative term for that Group. For example, in a Group rolled up by Method, the methodless term is the archetype term. For the Alpha 2 release, we have only added archetype terms in the context of Method rollups, but we plan to add more use cases in future releases.
+
+
+Beginning with the Alpha 2 release, we expect to persist the LG codes in future versions of the file.
+
+Each file contains the following counts:
+
+	- ParentGroup - 21 rows of data representing 21 unique Parent Groups
+	
+	- ParentGroupAttributes - 21 rows of data representing 21 unique Parent Groups
+
+	- Group - 4113 rows of data representing 21 unique Parent Groups and 4113 unique Groups
+
+	- GroupAttributes - 6 rows of data representing 6 unique Groups and their attributes
+
+	- GroupLoincTerms - 20419 rows of data representing 4113 unique Groups and 17578 unique LOINC terms
+
+
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
+
+Notice of changes to the public LOINC data files for the June 2018 Release: 
+Please see the primary LOINC Release Notes for information regarding file versioning that will be implemented in the June 2018 release.
+
+-----------------------
+ Version 2.61, Alpha 1        
+ Released June 2017  
+-----------------------
+                 
+This is the first release of the LOINC Group artifact. 
+
+This release contains 6597 rows of data representing 12 Parent Groups and 2178 Groups. These Groups contain 6438 unique LOINC terms.
+
+IMPORTANT NOTES:
+1. The LOINC Groups project is a work in progress. Expect the contents of this file, including the Parent Group and Group names and the types of Groups that are included, to change from release to release as we receive feedback from users and refine our processes.
+2. The contents of the file and the groupings MUST be validated by the user prior to implementation in any aspect of clinical care. We have created Groups that may be useful in specific contexts, but these Groups have not been vetted for use in either patient care or research and should be used with caution.
