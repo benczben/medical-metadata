@@ -1,6 +1,7 @@
 # medical-metadata
-The following project is a proof of concept of my master's thesis in the topic "Medical Metadata Development". The project consist a vue powered frontend, a nodeJS backend and a postgreSQL database.
-The proejct is utilizing docker, so that a running local copy can be set up easily with a single command.
+The following project is a proof of concept of my master's thesis, written at Alpen-Adria-Universität in the topic "Medical Metadata Development" in 2022. The stack is: Vue.JS, nodeJS, postgreSQL, openAPI 3.0, everything is dockerized.
+
+The written part of the thesis can be found on the university webpage: https://netlibrary.aau.at/obvuklhs/content/titleinfo/7771131
 
 # **Docker**
 
